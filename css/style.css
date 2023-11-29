@@ -127,6 +127,8 @@ body {
 }
 .page__why {
 }
+.page__fullscreen-image {
+}
 /* ================================================================================ */
 /* ======================================== Header ======================================== */
 .header {
@@ -494,6 +496,30 @@ body {
   }
   .why__title {
     font-size: 32px;
+  }
+}
+/* ================================================================================ */
+/* ======================================== Fullscreen image ======================================== */
+.fullscreen-image {
+  position: relative;
+  min-height: 460px;
+}
+.fullscreen-image__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+@media (max-width: 744.98px) {
+  .fullscreen-image {
+    min-height: 400px;
+  }
+}
+@media (max-width: 320.98px) {
+  .fullscreen-image {
+    min-height: 200px;
   }
 }
 /* ================================================================================ */
