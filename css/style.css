@@ -125,6 +125,8 @@ body {
 }
 .page__products {
 }
+.page__why {
+}
 /* ================================================================================ */
 /* ======================================== Header ======================================== */
 .header {
@@ -405,15 +407,7 @@ body {
     max-width: 392px;
   }
 }
-@media (max-width: 320.98px) {
-  .products {
-    padding-top: 30px;
-    padding-bottom: 40px;
-  }
-  .products__title {
-    font-size: 32px;
-    max-width: 280px;
-  }
+@media (max-width: 490.98px) {
   .products__image_1 {
     flex: 0 1 50%;
   }
@@ -428,6 +422,78 @@ body {
   }
   .products__text {
     font-size: 20px;
+  }
+}
+@media (max-width: 320.98px) {
+  .products__title {
+    font-size: 32px;
+    max-width: 280px;
+  }
+  .products {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+}
+/* ================================================================================ */
+/* ======================================== Why ======================================== */
+.why {
+  padding-top: 80px;
+  padding-bottom: 120px;
+}
+.why__container {
+  display: flex;
+  justify-content: space-between;
+}
+.why__title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px; /* 100% */
+  letter-spacing: -1.5px;
+  max-width: 411px;
+  padding-right: 20px;
+}
+.why__body {
+}
+.why__top {
+  font-weight: 700;
+  line-height: 140%; /* 22.4px */
+  margin: 0px 0px 40px 0px;
+}
+.why__top p:not(:last-child) {
+  margin: 0px 0px 16px 0px;
+}
+.why__text {
+  font-weight: 400;
+  line-height: 27px; /* 168.75% */
+  max-width: 496.788px;
+}
+@media (max-width: 740.98px) {
+  .why {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+  .why__title {
+    font-size: 40px;
+  }
+}
+@media (max-width: 490.98px) {
+  .why__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .why__title {
+    padding: 0;
+    margin: 0px 0px 32px 0px;
+  }
+}
+@media (max-width: 320.98px) {
+  .why {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+  .why__title {
+    font-size: 32px;
   }
 }
 /* ================================================================================ */
