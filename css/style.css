@@ -90,7 +90,7 @@ body {
   font-family: Inter;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1;
+  line-height: 140%;
   color: #292929;
 }
 .wrapper {
@@ -120,6 +120,8 @@ body {
   flex: 1 1 auto;
 }
 .page__main {
+}
+.page__recommended {
 }
 /* ================================================================================ */
 /* ======================================== Header ======================================== */
@@ -232,6 +234,87 @@ body {
   }
   .main__title {
     font-size: 32px;
+  }
+}
+/* ================================================================================ */
+/* ======================================== Recommended ======================================== */
+.recommended {
+  padding-top: 120px;
+  padding-bottom: 40px;
+}
+.recommended__container {
+}
+.recommended__title {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px; /* 100% */
+  letter-spacing: -1.5px;
+  margin: 0px 0px 64px 0px;
+}
+.recommended__items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  justify-items: center;
+}
+.recommended__item {
+}
+.item-recommended {
+}
+.item-recommended__image {
+}
+.item-recommended__image img {
+  max-width: 100%;
+}
+.item-recommended__image:not(:last-child) {
+  margin: 0px 0px 32px 0px;
+}
+.item-recommended__title {
+  font-weight: 700;
+  line-height: 140%; /* 22.4px */
+}
+.item-recommended__title:hover {
+  text-decoration: underline;
+}
+.item-recommended__title:not(:last-child) {
+  margin: 0px 0px 8px 0px;
+}
+.item-recommended__subtitle {
+  font-weight: 400;
+  line-height: 140%; /* 22.4px */
+}
+.item-recommended__subtitle:not(:last-child) {
+  margin: 0px 0px 12px 0px;
+}
+.item-recommended__price {
+  font-weight: 700;
+  line-height: 140%; /* 22.4px */
+}
+@media (max-width: 744.98px) {
+  .recommended {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+  .recommended__items {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+  }
+  .recommended__title {
+    font-size: 40px;
+  }
+}
+@media (max-width: 320.98px) {
+  .recommended {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+  .recommended__title {
+    font-size: 32px;
+    margin: 0px 0px 48px 0px;
+  }
+  .recommended__items {
+    gap: 30px;
   }
 }
 /* ================================================================================ */
